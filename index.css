@@ -5,10 +5,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .wrapper {
-    border: 1px solid red;
     width: 75vw;
     margin: 32px auto 0;
 }
@@ -26,7 +26,7 @@
 
 .header-top-nav ul {
     display: flex;
-    
+
 }
 
 .header-top-nav ul li {
@@ -38,7 +38,7 @@
     color: gray;
 }
 
-.header-top-nav ul a{
+.header-top-nav ul a {
     text-decoration: none;
     color: gray;
 }
@@ -46,18 +46,48 @@
 .nav-list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     width: 100%;
     gap: 8px;
+    margin-bottom: 2.5rem;
 }
 
-.main-content{
+.main-content {
     display: flex;
     justify-content: space-between;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1.5fr 0.5fr;
+    margin-top: 1rem;
 }
 
-.footer{
-    width: 80%;
+.item-article {
+    background-color: rgb(204, 202, 202);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+h2{
+    margin-top: 32px;
+}
+
+aside {
+    border-left: 1px solid grey;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    font-weight: 800;
+}
+
+.footer {
+    width: 100%;
     margin: 0 auto;
     text-align: center;
+    border-top: 1px solid grey;
+
 }
